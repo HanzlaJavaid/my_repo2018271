@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
     public void handleLoginRegister(){
 
         List<AuthUI.IdpConfig> provider = Arrays.asList(
-          new AuthUI.IdpConfig.EmailBuilder().build(),
-                new AuthUI.IdpConfig.GoogleBuilder().build()
+          new AuthUI.IdpConfig.EmailBuilder().build()
+
         );
 
         Intent intent = AuthUI.getInstance().createSignInIntentBuilder().setAvailableProviders(provider).setLogo(R.drawable.logo).setTosAndPrivacyPolicyUrls("https://google.com","https://google.com").setIsSmartLockEnabled(false).build();

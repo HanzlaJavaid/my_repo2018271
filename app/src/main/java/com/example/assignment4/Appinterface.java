@@ -6,6 +6,6 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface Appinterface {
-    @GET("api/?results=15")
+    @GET("posts/2")
     Call<Tweet> getTweets();
 }

@@ -20,7 +20,7 @@ public class Tweets extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
-    private ArrayList<Tweet> exampleList;
+    private ArrayList<Tweet> TweetsList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +32,7 @@ public class Tweets extends AppCompatActivity {
             @Override
             public void onResponse(Call<Tweet> call, Response<Tweet> response) {
                 Tweet results = response.body();
-
+                TweetsList.add(results);
             }
 
             @Override
@@ -42,7 +42,7 @@ public class Tweets extends AppCompatActivity {
         });
         mRecyclerView = findViewById(R.id.recycleView);
         mLayoutManager = new LinearLayoutManager(this);
-        mAdapter = new ExampleAdapter(Tweet);
+        mAdapter = new ExampleAdapter(TweetsList);
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setAdapter(mAdapter);
 }

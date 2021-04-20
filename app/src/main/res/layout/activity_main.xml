@@ -24,12 +24,12 @@
         android:id="@+id/mainText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="CS326 Mobile Computing\nMid Exam\nMuhammad Hanzla Javaid\n2018271"
         android:textSize="28dp"
-        android:text="CS326 Mobile Computing\nAssignment 5\nMuhammad Hanzla Javaid\n2018271"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.198" />
+        app:layout_constraintVertical_bias="0.163" />
 </androidx.constraintlayout.widget.ConstraintLayout>
